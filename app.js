@@ -5,8 +5,7 @@ const mongoose = require("mongoose");
 const blogRoutes = require("./routes/blogRoutes.js");
 
 const app = express();
-const dbURI =
-  "mongodb";
+const dbURI = "mongodb database link";
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
